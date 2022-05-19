@@ -68,10 +68,39 @@
     ;
 }
 
-#header .head_side>ul>li > a img {
-    width: 21px;
-    transform: translatey(-2px)
+/*aniverse*/
+#header .head_side .aniverse{
+    position:relative;
 }
+#header .head_side .aniverse .aniverse_list{
+    position:absolute;
+    width:20rem;
+    border-radius:15px;
+    background:#AC00F4;
+    left:50%;
+    margin-top:1.5rem;
+    transform:translatex(-50%);
+    display:none;
+}
+#header .head_side .aniverse .aniverse_list > ul{
+    list-style:none;
+    padding:20px ;
+}
+#header .head_side .aniverse .aniverse_list > ul >li+li{
+    margin-top:1rem
+}
+#header .head_side .aniverse .aniverse_list > ul >li > a{
+    display:inline-block;
+    color:#fff;
+    font-weight:300;
+    font-size:1.4rem;
+    text-decoration:none;
+}
+#header .head_side .aniverse .aniverse_list > ul >li > a img{
+    max-width:2.3rem;
+    margin-right:.8rem
+}
+/*sns*/
 #header .head_side .sns{
     position:relative;
 }
@@ -79,7 +108,7 @@
     position:absolute;
     width:20rem;
     border-radius:15px;
-    background:#b756ff;
+    background:#AC00F4;
     left:50%;
     margin-top:1.5rem;
     transform:translatex(-50%);
@@ -137,7 +166,7 @@
 
 #header>nav>ul>li.active>a,
 #header>nav>ul>li:hover>a {
-    color: #d87cff;
+    color: #ab00f3;
 }
 
 #header>nav>ul>li>ul {
@@ -385,7 +414,7 @@
 /*footer*/
 
 #footer {
-    background: #202020;
+    background: #010103;
     padding: 6rem 5rem;
 }
 
@@ -441,7 +470,7 @@
     bottom: 3rem;
     border-radius: 100%;
     border: 0;
-    background: #202020;
+    background: #ab00f3;
     width: 7rem;
     height: 7rem;
     transition: all .3s ease-in-out;
@@ -452,7 +481,7 @@
 }
 
 .goTop:hover {
-    background: #000
+    background: #5D5D5D;
 }
 
 
@@ -502,14 +531,14 @@
 
 #mainVisual {
     height: 98rem;
-    background: #030412 url(../_img/mv_bg.jpg) no-repeat center center / cover;
+    background: #030412 url(../_img/mv_bg.jpg) ;
     position: relative;
     z-index: 10;
 }
 #mainVisual::after{
     content:"";
     position:absolute;
-    background:url(../_img/mv_bg.jpg) no-repeat center center / cover;
+    background:url(../_img/mv_bg.jpg);
     width:100%;
     height:100%;
     z-index:1;
@@ -567,6 +596,7 @@
 }
 /*main_container*/
 #main_container{
+    background:url(../_img/mv_bg2.jpg) no-repeat center center / cover;
     position:relative;
     z-index:25;
 }
@@ -643,7 +673,13 @@
 
 #sec_intro {
     padding: 15rem 0;
-    background: #000;
+    /*background: #000;*/
+    text-align: center;
+}
+#sec_intro > .container {
+    padding: 15rem 0;
+    background: #400787DD;
+    border-radius: 15rem;
     text-align: center;
 }
 
@@ -655,7 +691,7 @@
 }
 
 #sec_intro h3 span {
-    color: #b756ff
+    color: #F0DF2F
 }
 
 #sec_intro h3+div {
@@ -689,7 +725,7 @@
 #main_container>section#sec_story {
     position: relative;
     padding: 10rem 0;
-    background: url(../_img/sec_story_bg.jpg) no-repeat center center / cover;
+    /*background: url(../_img/sec_story_bg.jpg) no-repeat center center / cover;*/
     z-index:2;
     overflow:hidden;
 }
@@ -700,7 +736,7 @@
     position:absolute;
     width:100%;
     height:100%;
-    background: url(../_img/sec_story_bg.jpg) no-repeat center center / cover;
+    /*background: url(../_img/sec_story_bg.jpg) no-repeat center center / cover;*/
     animation: mvbg 26s infinite linear 4s;
     z-index:1;
 }
@@ -739,7 +775,7 @@
 }
 
 #main_container>section#sec_story .row>div:last-child .inner p strong {
-    color: #d87cff;
+    color: #ab00f3;
     font-weight: 500;
 }
 #main_container>section#sec_story > div > h3{
@@ -782,11 +818,11 @@
 /*sec_nft*/
 
 #main_container>section#sec_nft {
-    background: rgb(98, 53, 136);
-    background: -moz-linear-gradient(124deg, rgba(98, 53, 136, 1) 0%, rgba(46, 6, 135, 1) 100%);
-    background: -webkit-linear-gradient(124deg, rgba(98, 53, 136, 1) 0%, rgba(46, 6, 135, 1) 100%);
-    background: linear-gradient(124deg, rgba(98, 53, 136, 1) 0%, rgba(46, 6, 135, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#623588", endColorstr="#2e0687", GradientType=1);
+    /*background: rgb(98, 53, 136);*/
+    /*background: -moz-linear-gradient(124deg, rgba(98, 53, 136, 1) 0%, rgba(46, 6, 135, 1) 100%);*/
+    /*background: -webkit-linear-gradient(124deg, rgba(98, 53, 136, 1) 0%, rgba(46, 6, 135, 1) 100%);*/
+    /*background: linear-gradient(124deg, rgba(98, 53, 136, 1) 0%, rgba(46, 6, 135, 1) 100%);*/
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#623588", endColorstr="#2e0687", GradientType=1);*/
     padding-top:12rem;
 	padding-bottom:27rem;
     position: relative;
@@ -828,6 +864,10 @@
 	position:relative;
 	text-align:center;
 }
+#main_container>section#sec_nft .pala {
+	position:relative;
+	text-align:center;
+}
 
 #main_container>section#sec_nft .btn-buy {
     margin-top: 5rem;
@@ -838,11 +878,11 @@
     display: inline-block;
 	margin-right:30px;
     padding: 2rem 6rem;
-    background: rgb(191, 81, 172);
-    background: -moz-linear-gradient(124deg, rgba(191, 81, 172, 1) 0%, rgba(154, 79, 197, 1) 100%);
-    background: -webkit-linear-gradient(124deg, rgba(191, 81, 172, 1) 0%, rgba(154, 79, 197, 1) 100%);
-    background: linear-gradient(124deg, rgba(191, 81, 172, 1) 0%, rgba(154, 79, 197, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#bf51ac", endColorstr="#9a4fc5", GradientType=1);
+    background: #B601FE;
+    background: -moz-linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    background: -webkit-linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    background: linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#bf51ac", endColorstr="#9a4fc5", GradientType=1);*/
     color: #fff;
     font-family: "Poppins";
     font-size: 2.2rem;
@@ -850,7 +890,6 @@
     position: relative;
     z-index: 2;
     border-radius: 60px;
-    box-shadow: 5px 6px 0px #651593;
 }
 
 #main_container>section#sec_nft .btn-buy a img {
@@ -862,6 +901,11 @@
     padding-left: 45px;
     background: url(../_img/comm/icon_opensea.png) no-repeat left center / 34px auto
 }
+.pala-btn-icon {
+    display: inline-block;
+    padding-left: 45px;
+    background: url(../_img/comm/icon_pala.png) no-repeat left center / 34px auto!important;
+}
 
 #main_container>section#sec_nft .btn-buy-after {
     margin-top: 5rem;
@@ -871,11 +915,11 @@
 #main_container>section#sec_nft .btn-buy-after a {
     display: inline-block;
     padding: 2rem 7rem;
-    background: rgb(191, 81, 172);
-    background: -moz-linear-gradient(124deg, rgba(191, 81, 172, 1) 0%, rgba(154, 79, 197, 1) 100%);
-    background: -webkit-linear-gradient(124deg, rgba(191, 81, 172, 1) 0%, rgba(154, 79, 197, 1) 100%);
-    background: linear-gradient(124deg, rgba(191, 81, 172, 1) 0%, rgba(154, 79, 197, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#bf51ac", endColorstr="#9a4fc5", GradientType=1);
+    background: #B601FE;
+    background: -moz-linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    background: -webkit-linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    background: linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#bf51ac", endColorstr="#9a4fc5", GradientType=1);*/
     color: #fff;
     font-family: "Poppins";
     font-size: 2.2rem;
@@ -883,7 +927,6 @@
     position: relative;
     z-index: 2;
     border-radius: 60px;
-    box-shadow: 5px 6px 0px #651593;
 }
 
 #main_container>section#sec_nft .btn-buy-after a img {
@@ -895,7 +938,6 @@
     padding-left: 45px;
     background: url(../_img/comm/icon_opensea.png) no-repeat left center / 34px auto
 }
-
 
 @media(max-width:576.98px){
     #main_container>section#sec_nft {
@@ -921,13 +963,12 @@
 	}
 
 }
-
 /*sec_roadmap*/
 
 #main_container>section#sec_roadmap {
     padding: 12rem 0;
     z-index: 12;
-    background: #04080a;
+    /*background: #04080a;*/
     text-align: center;
 }
 
@@ -948,11 +989,11 @@
 
 #main_container>section#sec_roadmap .swiper-wrapper .swiper-slide .item {
     position: relative;
-    background: rgb(238, 96, 156);
-    background: -moz-linear-gradient(124deg, rgba(238, 96, 156, 1) 0%, rgba(180, 100, 216, 1) 100%);
-    background: -webkit-linear-gradient(124deg, rgba(238, 96, 156, 1) 0%, rgba(180, 100, 216, 1) 100%);
-    background: linear-gradient(124deg, rgba(238, 96, 156, 1) 0%, rgba(180, 100, 216, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ee609c", endColorstr="#b464d8", GradientType=1);
+    background: #B601FE;
+    background: -moz-linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    background: -webkit-linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    background: linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ee609c", endColorstr="#b464d8", GradientType=1);*/
     padding: 5px;
     border-radius: 15px;
 }
@@ -972,14 +1013,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color:#e561a6
+    color:#ab00f3
 }
 #main_container>section#sec_roadmap .swiper-wrapper .swiper-slide .item.last .num{
-    background: rgb(238, 96, 156);
-    background: -moz-linear-gradient(124deg, rgba(238, 96, 156, 1) 0%, rgba(180, 100, 216, 1) 100%);
-    background: -webkit-linear-gradient(124deg, rgba(238, 96, 156, 1) 0%, rgba(180, 100, 216, 1) 100%);
-    background: linear-gradient(124deg, rgba(238, 96, 156, 1) 0%, rgba(180, 100, 216, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ee609c", endColorstr="#b464d8", GradientType=1);
+    background: #B601FE;
+    background: -moz-linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    background: -webkit-linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    background: linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ee609c", endColorstr="#b464d8", GradientType=1);*/
     color:#fff;
 }
 #main_container>section#sec_roadmap .swiper-wrapper .swiper-slide .item .num span {
@@ -1057,18 +1098,18 @@
 }
 
 #main_container>section#sec_roadmap .detail_roadmap a{
-	background: rgb(153, 67, 176);
-    background: -moz-linear-gradient(124deg, rgba(153, 67, 176, 1) 0%, rgba(138, 66, 186, 1) 100%);
-    background: -webkit-linear-gradient(124deg, rgba(153, 67, 176, 1) 0%, rgba(138, 66, 186, 1) 100%);
-    background: linear-gradient(124deg, rgba(153, 67, 176, 1) 0%, rgba(138, 66, 186, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ee609c", endColorstr="#b464d8", GradientType=1);
+    background: #B601FE;
+    background: -moz-linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    background: -webkit-linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    background: linear-gradient(124deg, #B601FE 0%, #6300F7 100%);
+    /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ee609c", endColorstr="#b464d8", GradientType=1);*/
 	border:0;
 	border-radius:5rem;
 	padding:2.5rem;
 	color:#fff;
 	font-size:1.8rem;
 	min-width:28rem;
-	box-shadow:5px 5px 0px #651593;
+	/*box-shadow:5px 5px 0px #651593;*/
 	outline:none;
 	display:inline-block;
 	text-decoration:none;
@@ -1119,7 +1160,10 @@
 	 padding-left: 30px;
 	background: url(../_img/comm/icon_opensea.png) no-repeat left center / 20px auto
 	}
-
+    .pala-btn-icon {
+        padding-left: 30px;
+        background: url(../_img/comm/icon_pala.png) no-repeat left center / 20px auto!important;
+    }
     #main_container>section#sec_nft .btn-buy a {
         display: inline-block;
         padding: 1.3rem 3.6rem;
@@ -1212,7 +1256,7 @@
 }
 
 #sec_team .team_list>li {
-    width: 20%;
+    width: 25%;
     padding:0px 20px
 }
 #sec_team .team_list>li img{
@@ -1242,7 +1286,7 @@
 }
 
 #sec_team .team_list>li>div>div:last-child>p:first-child>span {
-    color: #c577ff;
+    color: #ab00f3;
     font-size: 1.6rem;
     line-height: 1.2;
 }
@@ -1546,3 +1590,133 @@
     }
     
 }
+
+/*sec_staking*/
+#main_container>section#sec_staking {
+    padding: 12rem 0;
+    z-index: 12;
+    text-align: center;
+}
+#main_container>section#sec_staking>.container{
+    width: 80%;
+}
+
+.staking_item_1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: #6D01C9;
+    background: -moz-linear-gradient(124deg, #6D01C9 0%, #2C0089 100%);
+    background: -webkit-linear-gradient(124deg, #6D01C9 0%, #2C0089 100%);
+    background: linear-gradient(124deg, #6D01C9 0%, #2C0089 100%);
+    border-radius: 5rem;
+    padding: 5rem;
+    margin-bottom: 5rem;
+}
+.staking_item_1>.left_item {
+    width: 60%;
+    text-align: left;
+
+}
+.staking_item_1>.left_item> h3{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+.staking_item_1>.left_item> p {
+    margin-bottom: 2rem;
+    font-weight: 100;
+}
+.staking_item_1>.left_item> a{
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins';
+    color: #FFF;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background: #ab00f3;
+}
+.staking_item_1>.right_item {
+    position: relative;
+    width: 40%;
+}
+.staking_item_1>.right_item>img {
+    position: absolute;
+    top: -15rem;
+    right: 0;
+    width: 100%;
+}
+.staking_item_2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.staking_item_2>.box {
+    border-radius: 5rem;
+    display: inline-block;
+    width: 45%;
+    padding: 5rem;
+    text-align: left;
+}
+.staking_item_2>.box1 {
+    background: #FAC821;
+    background: -moz-linear-gradient(124deg, #FAC821 0%, #F85601 100%);
+    background: -webkit-linear-gradient(124deg, #FAC821 0%, #F85601 100%);
+    background: linear-gradient(124deg, #FAC821 0%, #F85601 100%);
+}
+.staking_item_2>.box2 {
+    background: #00A5EE;
+    background: -moz-linear-gradient(124deg, #00A5EE 0%, #001ED1 100%);
+    background: -webkit-linear-gradient(124deg, #00A5EE 0%, #001ED1 100%);
+    background: linear-gradient(124deg, #00A5EE 0%, #001ED1 100%);
+}
+.staking_item_2>.box> h3{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+.staking_item_2>.box> p {
+    margin-bottom: 2rem;
+    font-weight: 100;
+}
+.staking_item_2>.box {
+    position: relative;
+    width: 47.5%;
+}
+.staking_item_2>.box1>img {
+    position: absolute;
+    bottom: -15rem;
+    right: 5rem;
+}
+.staking_item_2>.box1> a{
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins';
+    color: #FFF;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background: #F25D14;
+}
+.staking_item_2>.box2>img {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+}
+.staking_item_2>.box2> a{
+     display: inline-block;
+     font-size: 2rem;
+     margin-bottom: 2rem;
+     font-family: 'Poppins';
+     color: #FFF;
+     margin-top: 1rem;
+     padding: 1rem 2rem;
+     border-radius: 2rem;
+     background: #132ECF;
+ }

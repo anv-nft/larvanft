@@ -7,6 +7,7 @@
     burger_menu();
     main_title();
     head_side_sns();
+    head_side_aniverse();
     roadmap();
     setTimeout(function() {
         swiper_nft();
@@ -170,6 +171,11 @@
     function head_side_sns() {
         $(".head_side .sns > a").on('click', function() {
             $(this).next(".sns_list").slideToggle();
+        });
+    }
+    function head_side_aniverse() {
+        $(".head_side .aniverse > a").on('click', function() {
+            $(this).next(".aniverse_list").slideToggle();
         });
     }
 
