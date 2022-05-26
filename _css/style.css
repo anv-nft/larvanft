@@ -677,9 +677,9 @@
     text-align: center;
 }
 #sec_intro > .container {
-    padding: 15rem 0;
+    padding: 10rem 5rem;
     background: #400787DD;
-    border-radius: 15rem;
+    border-radius: 10rem;
     text-align: center;
 }
 
@@ -799,7 +799,8 @@
         margin-bottom:3rem
     }
     #main_container>section#sec_story .row>div:last-child .inner{
-        max-width:100%
+        max-width:100%;
+        padding: 0 3rem;
     }
     
 }
@@ -876,6 +877,7 @@
 
 #main_container>section#sec_nft .btn-buy a {
     display: inline-block;
+    width: 50rem;
 	margin-right:30px;
     padding: 2rem 6rem;
     background: #B601FE;
@@ -885,7 +887,7 @@
     /*filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#bf51ac", endColorstr="#9a4fc5", GradientType=1);*/
     color: #fff;
     font-family: "Poppins";
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 500;
     position: relative;
     z-index: 2;
@@ -1107,7 +1109,7 @@
 	border-radius:5rem;
 	padding:2.5rem;
 	color:#fff;
-	font-size:1.8rem;
+	font-size:2rem;
 	min-width:28rem;
 	/*box-shadow:5px 5px 0px #651593;*/
 	outline:none;
@@ -1191,8 +1193,8 @@
 
     #main_container>section#sec_nft .btn-buy a {
         display: inline-block;
-        padding: 1rem 2rem;
-        font-size: 1.5rem;
+        padding: 2.5rem;;
+        font-size: 2rem;
         box-shadow: 3px 4px 0px #651593;
     }
 
@@ -1214,8 +1216,8 @@
 
 	#main_container>section#sec_nft .btn-buy a {
 		display: inline-block;
-		padding: 1rem 2rem;
-		font-size: 1.2rem;
+        padding: 2.5rem;
+		font-size: 2rem;
 		box-shadow: 3px 4px 0px #651593;
 	}
 
@@ -1292,7 +1294,7 @@
 }
 
 #sec_team .team_list>li>div>div:last-child>p:last-child {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.2;
     font-weight:600;
 }
@@ -1628,6 +1630,7 @@
     font-weight: 700;
 }
 .staking_item_1>.left_item> p {
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     font-weight: 100;
 }
@@ -1639,8 +1642,9 @@
     color: #FFF;
     margin-top: 1rem;
     padding: 1rem 2rem;
-    border-radius: 2rem;
+    border-radius: 4rem;
     background: #ab00f3;
+    text-decoration: none;
 }
 .staking_item_1>.right_item {
     position: relative;
@@ -1684,6 +1688,7 @@
     font-weight: 700;
 }
 .staking_item_2>.box> p {
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     font-weight: 100;
 }
@@ -1704,8 +1709,9 @@
     color: #FFF;
     margin-top: 1rem;
     padding: 1rem 2rem;
-    border-radius: 2rem;
+    border-radius: 4rem;
     background: #F25D14;
+    text-decoration: none;
 }
 .staking_item_2>.box2>img {
     position: absolute;
@@ -1720,8 +1726,9 @@
      color: #FFF;
      margin-top: 1rem;
      padding: 1rem 2rem;
-     border-radius: 2rem;
+     border-radius: 4rem;
      background: #132ECF;
+    text-decoration: none;
  }
 @media(max-width:1450px) {
     .staking_item_2>.box> h3{
@@ -1746,6 +1753,9 @@
     }
 }
 @media(max-width:990px) {
+    #sec_intro > .container{
+        width: 90%;
+    }
     .staking_item_1 .pc_txt {
         display: none;
     }
