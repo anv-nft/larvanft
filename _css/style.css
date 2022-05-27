@@ -74,7 +74,7 @@
 }
 #header .head_side .aniverse .aniverse_list{
     position:absolute;
-    width:20rem;
+    width:22rem;
     border-radius:15px;
     background:#AC00F4;
     left:50%;
@@ -950,7 +950,6 @@
         display: inline-block;
         padding: 1.5rem 3rem;
         font-size: 2rem;
-        box-shadow: 3px 4px 0px #651593;
 		margin-right:0;
 		min-width:35rem;
     }
@@ -1170,7 +1169,6 @@
         display: inline-block;
         padding: 1.3rem 3.6rem;
         font-size: 1.5rem;
-        box-shadow: 3px 4px 0px #651593;
     }
 
 	 #main_container>section#sec_nft .btn-buy-after a {
@@ -1195,7 +1193,6 @@
         display: inline-block;
         padding: 2.5rem;;
         font-size: 2rem;
-        box-shadow: 3px 4px 0px #651593;
     }
 
 	 #main_container>section#sec_nft .btn-buy-after a {
@@ -1218,7 +1215,6 @@
 		display: inline-block;
         padding: 2.5rem;
 		font-size: 2rem;
-		box-shadow: 3px 4px 0px #651593;
 	}
 
 
@@ -1226,7 +1222,6 @@
 		display: inline-block;
 		padding: 1rem 2rem;
 		font-size: 1.2rem;
-		box-shadow: 3px 4px 0px #651593;
 	}
 
 }
