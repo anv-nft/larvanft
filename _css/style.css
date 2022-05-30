@@ -1181,6 +1181,9 @@
 	 padding-left: 30px;
 	background: url(../_img/comm/icon_opensea.png) no-repeat left center / 20px auto
 	}
+    #main_container>section#sec_nft .opensea p:nth-child(2){
+        margin-top: 2.5rem;
+    }
 }
 
 @media(max-width:767.98px){
@@ -1188,7 +1191,6 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
     #main_container>section#sec_nft .btn-buy a {
         display: inline-block;
         padding: 2.5rem;;
@@ -1609,11 +1611,16 @@
     border-radius: 5rem;
     padding: 5rem;
     margin-bottom: 5rem;
+    text-decoration: none;
+    color: #FFF;
+}
+.staking_item_1:hover{
+    text-decoration: none;
+    color: #FFF;
 }
 .staking_item_1>.left_item {
     width: 60%;
     text-align: left;
-
 }
 .staking_item_1 .mo_txt {
     display: none;
@@ -1629,7 +1636,7 @@
     margin-bottom: 2rem;
     font-weight: 100;
 }
-.staking_item_1>.left_item> a{
+.staking_item_1>.left_item> button{
     display: inline-block;
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -1639,7 +1646,7 @@
     padding: 1rem 2rem;
     border-radius: 4rem;
     background: #ab00f3;
-    text-decoration: none;
+    border: none;
 }
 .staking_item_1>.right_item {
     position: relative;
@@ -1655,14 +1662,20 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-
+    text-decoration: none;
 }
 .staking_item_2>.box {
     border-radius: 5rem;
     display: inline-block;
     width: 45%;
     padding: 5rem;
+    text-decoration: none;
+    color: #FFF;
     text-align: left;
+}
+.staking_item_2>.box:hover{
+    text-decoration: none;
+    color: #FFF;
 }
 .staking_item_2>.box1 {
     background: #FAC821;
@@ -1696,7 +1709,7 @@
     bottom: -15rem;
     right: 5rem;
 }
-.staking_item_2>.box1> a{
+.staking_item_2>.box1> button{
     display: inline-block;
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -1707,13 +1720,14 @@
     border-radius: 4rem;
     background: #F25D14;
     text-decoration: none;
+    border: none;
 }
 .staking_item_2>.box2>img {
     position: absolute;
     top: 5rem;
     right: 5rem;
 }
-.staking_item_2>.box2> a{
+.staking_item_2>.box2> button{
      display: inline-block;
      font-size: 2rem;
      margin-bottom: 2rem;
@@ -1723,7 +1737,7 @@
      padding: 1rem 2rem;
      border-radius: 4rem;
      background: #132ECF;
-    text-decoration: none;
+    border: none;
  }
 @media(max-width:1450px) {
     .staking_item_2>.box> h3{
