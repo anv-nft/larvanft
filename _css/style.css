@@ -1061,7 +1061,7 @@
     top:-8%;
     margin-top:1px;
 }
-#main_container>section#sec_roadmap .swiper-wrapper .swiper-slide .item.complete .num span {
+#main_container>section#sec_roadmap .swiper-wrapper .swiper-slide .item.complete .num span,#main_container>section#sec_roadmap .swiper-wrapper .swiper-slide .item.progress .num span {
     display: none;
 }
 
