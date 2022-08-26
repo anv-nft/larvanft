@@ -545,10 +545,10 @@
     animation: mvbg 26s infinite linear 1s;
 }
 @keyframes mvbg{
-	0%{ 
+	0%{
 		-webkit-transform: scale(1);
-	} 
-	50%{ 
+	}
+	50%{
 		-webkit-transform: scale(1.2);
 	}
 	100%{
@@ -644,7 +644,7 @@
         max-width: 67.2rem;
         margin-right: -14rem;
     }
-   
+
 
 }
 
@@ -802,7 +802,7 @@
         max-width:100%;
         padding: 0 3rem;
     }
-    
+
 }
 @media(max-width:576.98px){
     #main_container>section#sec_story .row>div h3{display:none;}
@@ -1051,7 +1051,16 @@
    top:-8%;
    margin-top:1px;
 }
-
+#main_container>section#sec_roadmap .swiper-wrapper .swiper-slide .item.progress .num::after {
+    content: "";
+    position: absolute;
+    background: url(../_img/roadmap_progress_char1.png) no-repeat center center / cover;
+    width:113%;
+    height:116%;
+    left:-8%;
+    top:-8%;
+    margin-top:1px;
+}
 #main_container>section#sec_roadmap .swiper-wrapper .swiper-slide .item.complete .num span {
     display: none;
 }
@@ -1337,7 +1346,7 @@
     #sec_team .team_list>li:nth-child(n+3) {
         margin-top: 15px;
     }
-    
+
     #sec_team .team_list>li img{
         max-width:22rem;
     }
@@ -1587,7 +1596,7 @@
     #main_container>section#sec_faq .pop_item.item2 img{
         max-width:24.6rem
     }
-    
+
 }
 
 /*sec_staking*/
